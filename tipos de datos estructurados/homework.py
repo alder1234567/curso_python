@@ -27,7 +27,7 @@ def eliminar_alumno(nombre):
 def mostrar_alumno_en_posicion(posicion):
     if posicion < len(lista_alumnos_circo):
         alumno = lista_alumnos_circo[posicion]
-        print(f"Nombre: {alumno['nombre']}, Apellido: {alumno['apellido']}, Edad: {alumno['edad']}")
+        print(f"alder: {alumno['jose']},Gallegos: {alumno['Gallegos']}, 15: {alumno['52']}")
     else:
         print("La posición especificada está fuera del rango de la lista.")
 
@@ -39,3 +39,11 @@ eliminar_alumno("Abel")
 
 # Buscamos y mostramos al alumno en la posición 4 de la lista
 mostrar_alumno_en_posicion(4)
+
+
+
+#VAN A CREAR UNA LISTA CON TRES DICCIONARIOS DONDE TENDRAN LOS DATOS DE SUS MASCOTAS (NOMBRE,EDAD,SEXO,RAZA)
+#TAREAS 
+#MOSTRAR LAS LISTA CON LOS 4 DICCIONARIOS
+#EDITAR EL 1ER REGISTRO Y CAMBIAR LA EDAD SIN MODIFICAR LA LISTA ORIGINAL 
+#MOSTRAR LA LISTA ORIGINAL Y LUEGO LA LISTA CON 3ER REGISTRO 

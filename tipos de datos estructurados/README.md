@@ -62,3 +62,39 @@ indice=lista_nombres.index("ruth)
 print(lista_nombres[indice])
 
 pertenencia="edith" in lista_nombres #true false
+
+
+### 5. operacion de listas 
+podemos dar de uso de los operadores de comparacion para comparar listas 
+**ejem:**
+```python 
+compara=[1,2,3]>[1,2,3]
+#1 no por que son iguales en ambas listas 
+#2 no por que son iguales en ambas listas 
+#3 evalua que es menor a 4 
+# entonces la primera lista es menor que la segunda lista 
+print(compara)
+#salida:
+### 6. CUIDADO CON LAS COPIAS 
+###7. FE DE ERRATAS (ACTUALIZAR LISTAS )```python 
+```python 
+LISTA=[1,3,4,5]
+lista[0]=2
+print(copia_lista)
+#
+#modificando lista con diccionario
+alumnos=(
+    nombre="abel",
+    "edad":15
+
+)
+(
+    "nombre":"antony",
+    "edad":29
+
+    alumnos[0]("edad")=30
+    alumnos[0]=("nombres":"mafer","edad":15)
+   alumnos[1]("sexo")="por definir"
+    print(alumnos)
+
+)
