@@ -43,7 +43,43 @@ mostrar_alumno_en_posicion(4)
 
 
 #VAN A CREAR UNA LISTA CON TRES DICCIONARIOS DONDE TENDRAN LOS DATOS DE SUS MASCOTAS (NOMBRE,EDAD,SEXO,RAZA)
+
 #TAREAS 
+
 #MOSTRAR LAS LISTA CON LOS 4 DICCIONARIOS
+
 #EDITAR EL 1ER REGISTRO Y CAMBIAR LA EDAD SIN MODIFICAR LA LISTA ORIGINAL 
+
 #MOSTRAR LA LISTA ORIGINAL Y LUEGO LA LISTA CON 3ER REGISTRO 
+#crear una lista con 3 diccionarios donde tendran los datos de sus mascotas(nombre,edad,sexo,raza)
+#tareas
+#mostrar la lista con los 4 diccionarios
+# editar 3 registro y cambiarle la edad sin modificar la lista original
+#mostrar la lista original y luego la lista con el 3er registro modificado
+
+
+
+
+
+# Crear la lista de diccionarios
+mascotas = [
+    {"nombre": "Luna", "edad": 3, "sexo": "embra", "raza": "Labrador Retriever"},
+    {"nombre": "Max", "edad": 5, "sexo": "macho", "raza": "Golden Retriever"},
+    {"nombre": "Bella", "edad": 2,"sexo":"hembra", "raza": "Border Collie"}
+]
+
+# Mostrar la lista original
+print("Lista original:")
+print(mascotas)
+
+# Editar 3 registros y cambiarles la edad sin modificar la lista original
+mascotas_editadas = mascotas.copy()  # Copiar la lista original para editarla sin modificar la original
+mascotas_editadas[0]["edad"] = 4  # Cambiar la edad de Luna
+mascotas_editadas[1]["edad"] = 6  # Cambiar la edad de Max
+mascotas_editadas[2]["edad"] = 3  # Cambiar la edad de Bella
+
+# Mostrar la lista original y la lista editada
+print("Lista original:")
+print(mascotas)
+print("Lista con el 3er registro modificado:")
+print(mascotas_editadas)
