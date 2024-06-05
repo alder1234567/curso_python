@@ -98,3 +98,17 @@ alumnos=(
     print(alumnos)
 
 )
+
+### 8. listas de diccionario por comprencion 
+es una tecnica pythonica que nos permite crear 
+listas y diccionarios en una sola linea conbinandio 
+bucles y deciciones .
+diccionario en una sola linea conbinandio
+>{note}
+**vlc**
+
+
+
+textos"1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if n%2==0]
+print(nueva_lista)

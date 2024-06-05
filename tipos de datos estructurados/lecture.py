@@ -35,3 +35,29 @@ lista_ordenadar==sorted(lista)
 print=("lista_ordenada":,lista_ordenada")
        print=("lista_a_ordenar:",lista)
       
+
+#crear una lista de numeros enteros del siguiente texto
+textos"1,4,8,9,6"
+convertir=texto.split(",")
+print(convertir)
+
+
+textos"1,4,8,9,6"
+nueva_lista=()
+for n in texto.split  (","):
+   nueva_lista.append(int(n))
+
+print(nueva_lista)
+
+#aplicando la tecnica vlc valor bucle y condicion
+textos"1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if n%2==0]
+print(nueva_lista)
+
+#diccionario por comprencion 
+lista_amigos=["abel","antonny","edtith","ruth"]
+diccionario=()
+for _,v in enumerate(lista_amigos):
+   diccionarios(v)=len(v)
+print(diccionario)
+#aplicaciones el vlc

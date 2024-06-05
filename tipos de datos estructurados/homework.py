@@ -253,3 +253,10 @@ if _name_ == "_main_":
 
     sistema.cerrar_conexion()
 
+
+#crear lista de los primero 20 numeros primos aciendo uso de compresion 
+
+es_primo = lambda n: n > 1 and all(n % i != 0 for i in range(2, int(n**0.5) + 1))
+primeros_20_primos = [num for num in range(2, 100) if es_primo(num)][:20]
+print(primeros_20_primos)
+            
