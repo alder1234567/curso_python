@@ -219,3 +219,11 @@ python
 cadena = "123"
 numero = int(cadena)
 print("El número es:", numero)
+
+
+#tipos de funciones
+#funciones anonimas(funcioneslambda)
+###funciones clousere
+###funciones caliback
+
+###programacion funcional
