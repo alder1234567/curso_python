@@ -227,3 +227,216 @@ print("El número es:", numero)
 ###funciones caliback
 
 ###programacion funcional
+```python
+lista=[5,7,8,4,1]
+def num_minimo(1):
+    minimo=l[0]
+    for n in l:
+        if n < minimo:
+            minmo=n
+    return minimo
+    #programacion funcional 
+    min(lista)
+    ```
+####averiguar sobre map(),filter(),teduce()
+
+
+# la función `map()` en Python
+
+La función `map()` en Python permite aplicar una función a cada elemento de un iterable (como una lista, tupla, etc.) y devuelve un iterable de resultados. Aquí están los puntos clave:
+
+1. **Sintaxis**:
+   ```python
+   map(función, iterable)
+   ```
+   - `función`: Es la función que se aplicará a cada elemento del iterable.
+   - `iterable`: Es el iterable sobre el cual se aplicará la función.
+
+2. **Resultado**:
+   - `map()` devuelve un objeto map en Python 3.x (un iterador), que debe convertirse en una lista, tupla u otro iterable para ver los resultados.
+
+3. **Uso común**:
+   - Transformación de datos: `map()` se utiliza principalmente para transformar los elementos de un iterable aplicando una función.
+   - Evita bucles explícitos: Permite evitar la escritura de bucles `for` explícitos para aplicar una función a cada elemento de una colección.
+
+4. **Funciones lambda con `map()`**:
+   - A menudo, se utiliza una función lambda junto con `map()` para aplicar funciones simples de manera más concisa.
+
+5. **Eficiencia**:
+   - `map()` es eficiente en términos de código y rendimiento, especialmente para operaciones simples y directas en colecciones de datos.
+
+### Ejemplos de uso:
+
+- **Convertir temperaturas de Celsius a Fahrenheit**:
+  ```python
+  def celsius_a_fahrenheit(celsius):
+      return (9/5) * celsius + 32
+  
+  temperaturas_celsius = [0, 10, 20, 30, 40]
+  temperaturas_fahrenheit = list(map(celsius_a_fahrenheit, temperaturas_celsius))
+  ```
+
+- **Conversión de cadenas a enteros**:
+  ```python
+  numeros_como_cadenas = ["1", "2", "3", "4", "5"]
+  numeros_como_enteros = list(map(int, numeros_como_cadenas))
+  ```
+
+- **Uso de lambda para calcular cuadrados**:
+  ```python
+  numeros = [1, 2, 3, 4, 5]
+  cuadrados = list(map(lambda x: x ** 2, numeros))
+  ```
+
+En resumen, `map()` es una función útil para aplicar una función a cada elemento de un iterable y obtener los resultados en forma de otro iterable, facilitando así la manipulación y transformación de datos en Python de manera eficiente y clara.
+Claro, te explico sobre la función `filter()` en Python.
+
+
+
+
+
+
+
+### Función filter () en Python
+
+La función `filter()` en Python se utiliza para filtrar elementos de un iterable (como una lista, tupla, etc.) según una función de filtrado que se define. Esta función de filtrado debe devolver `True` o `False` y `filter()` devolverá un iterable que contiene solo los elementos para los cuales la función de filtrado devuelve `True`.
+
+### Sintaxis de `filter()`
+
+La sintaxis general de `filter()` es:
+
+```python
+filter(función_de_filtrado, iterable)
+```
+
+- `función_de_filtrado`: Es la función que se aplica a cada elemento del iterable. Debe devolver `True` o `False`.
+- `iterable`: Es el iterable (como una lista, tupla, etc.) del cual se van a filtrar los elementos.
+
+### Características clave de `filter()`
+
+1. **Filtrado de elementos**: `filter()` se utiliza para seleccionar elementos de un iterable basándose en una función de filtrado que se aplica a cada elemento.
+
+2. **Devuelve un iterable**: En Python 3.x, `filter()` devuelve un objeto filter, que es un iterable. Para ver los resultados, comúnmente se convierte este objeto filter a una lista, tupla u otro tipo de iterable.
+
+3. **Eficiencia**: Al igual que `map()`, `filter()` es eficiente porque evita la necesidad de escribir bucles explícitos para filtrar elementos.
+
+### Ejemplos de uso de `filter()`
+
+#### Ejemplo 1: Filtrar números impares de una lista
+
+```python
+def es_impar(numero):
+    return numero % 2 != 0
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numeros_impares = list(filter(es_impar, numeros))
+
+print(numeros_impares)
+# Output: [1, 3, 5, 7, 9]
+```
+
+En este ejemplo, `filter()` aplica la función `es_impar` a cada elemento de la lista `numeros` y devuelve una lista `numeros_impares` que contiene solo los números impares.
+
+#### Ejemplo 2: Filtrar palabras que comienzan con una letra específica
+
+```python
+def empieza_con_letra(letra, palabra):
+    return palabra.startswith(letra)
+
+palabras = ["python", "java", "c", "javascript", "php"]
+palabras_con_p = list(filter(lambda x: empieza_con_letra('p', x), palabras))
+
+print(palabras_con_p)
+# Output: ['python', 'php']
+```
+
+En este ejemplo, se utiliza una función lambda junto con `filter()` para filtrar las palabras de la lista `palabras` que comienzan con la letra 'p'.
+
+### Notas adicionales
+
+- **Lambda con `filter()`**: Es común utilizar funciones lambda con `filter()` para definir la función de filtrado de manera más concisa y en el lugar.
+
+- **Iterables múltiples**: Al igual que con `map()`, `filter()` puede aceptar más de un iterable. Sin embargo, la función de filtrado debe aceptar tantos argumentos como iterables se proporcionen.
+
+En resumen, `filter()` es una función útil en Python para seleccionar elementos de un iterable según una función de filtrado definida, facilitando así la manipulación y selección de datos de manera eficiente y legible.
+
+
+
+
+
+
+### Función `reduce()` en Python
+
+La función `reduce()` en Python proporciona una manera de aplicar una función de manera acumulativa a los elementos de un iterable, reduciéndolos a un solo valor. Aunque anteriormente era una función integrada en Python 2, en Python 3 se movió al módulo `functools`. Aquí te explico en detalle cómo funciona y cómo se usa:
+
+1. **Función**: La función que se aplicará de manera acumulativa a los elementos del iterable.
+2. **Iterable**: El iterable (como una lista, tupla, etc.) sobre el cual se aplicará la función de reducción.
+
+### Sintaxis de `reduce()`
+
+La sintaxis general de `reduce()` es la siguiente:
+
+```python
+from functools import reduce
+
+reduce(función, iterable, valor_inicial)
+```
+
+- `función`: Es la función que toma dos argumentos y devuelve un solo valor. Esta función se aplicará de manera acumulativa a los elementos del iterable.
+- `iterable`: Es el iterable sobre el cual se aplicará la función de reducción.
+- `valor_inicial` (opcional): Es el valor inicial del acumulador. Si se proporciona, el primer argumento de la función se establece como este valor inicial en la primera llamada. Si no se proporciona, el primer elemento del iterable se usa como valor inicial y la función comienza con el segundo elemento.
+
+### Ejemplo de uso de `reduce()`
+
+#### Ejemplo 1: Calcular la suma de todos los elementos de una lista
+
+```python
+from functools import reduce
+
+def suma(a, b):
+    return a + b
+
+numeros = [1, 2, 3, 4, 5]
+suma_total = reduce(suma, numeros)
+
+print(suma_total)  # Output: 15
+```
+
+En este ejemplo, `reduce()` aplica la función `suma` de manera acumulativa a los elementos de la lista `numeros`, comenzando con el primer elemento como valor inicial (por defecto), y devuelve la suma total de todos los elementos.
+
+#### Ejemplo 2: Calcular el producto de todos los elementos de una lista
+
+```python
+from functools import reduce
+
+def producto(a, b):
+    return a * b
+
+numeros = [1, 2, 3, 4, 5]
+producto_total = reduce(producto, numeros)
+
+print(producto_total)  # Output: 120
+```
+
+En este caso, `reduce()` aplica la función `producto` de manera acumulativa a los elementos de la lista `numeros` y devuelve el producto total de todos los elementos.
+
+### Funciones lambda con `reduce()`
+
+Es común utilizar funciones lambda con `reduce()` para definir la función de reducción de manera más concisa y en el lugar:
+
+```python
+from functools import reduce
+
+numeros = [1, 2, 3, 4, 5]
+producto_total = reduce(lambda x, y: x * y, numeros)
+
+print(producto_total)  # Output: 120
+```
+
+### Notas adicionales
+
+- **Importancia del valor inicial**: Es importante tener en cuenta que si el iterable está vacío y no se proporciona un valor inicial, `reduce()` generará un error `TypeError`.
+
+- **Eficiencia y legibilidad**: `reduce()` puede ser menos legible en comparación con otras técnicas más simples como listas de comprensión o bucles `for`, por lo que se debe utilizar con cuidado para mantener el código claro y mantenible.
+
+En resumen, `reduce()` es una función útil en Python para aplicar una función de manera acumulativa a los elementos de un iterable y reducirlos a un solo valor, lo que puede ser útil en diversas operaciones de procesamiento de datos donde se necesita una operación acumulativa.

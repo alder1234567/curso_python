@@ -56,3 +56,25 @@ return dict(
     edad=edad
     )
 print(persona(nombre,edad))
+
+##ejemplo de labda
+saludo=labda n,a:f"hola, (n) ,  (a)"
+print(saludo("ruth" , "castillo"))
+
+##crea un programa anonimo que reciba un parametro una 
+# lista de 5 numeros y retorne dos listas una com los 
+# numerospares y otra con numeros impares 
+
+lista_numeros = (1,2,3,4,5,6,7,8,9,10)
+pares=lambda l:[n for n in lista if n%2==0]
+pares=lambda l:[n for n in lista if n%2==0]
+print(pares(lista))
+priny(impares(lista))
+  
+
+def mensaje (m) :
+    print(m)
+def pedir_nombre():
+    nombre=input("ingrese tu nombre")
+    return nombre
+mensaje(pedir_nombre())
