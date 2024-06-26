@@ -37,6 +37,12 @@ def alumnos (**kwargs)
 alimno=(nombre="miguel",apellido="largo",edad=30)
 
 
+#crear una lista de almnos con los siguientes campos
+#nombre, apellido,edad,celular,email
+#1. actualizarlos registro9s con un campo tods el campo de programa de 
+#estudios de enermeria 
+#2. buscar el segundo registro y actualizar su edad a 50 años 
+
 
 
 
