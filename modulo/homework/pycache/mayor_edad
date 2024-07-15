@@ -1,0 +1,7 @@
+def mayor_edad(edad):
+    """funcion para subir si es una persona mayor de edad
+    """
+    if edad>=18:
+        print("es mator de edad")
+    else:
+        print("es menor de edad")
