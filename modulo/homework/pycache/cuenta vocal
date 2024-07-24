@@ -1,4 +1,4 @@
-ef f_cuenta_vocales(text:str):
+ef f_cue.nta_vocales(text:str):
     """funcion para contar la cantidad de vocales a que aparecen en
     un texto"""
     text_minuscula:str=text.lowr()
