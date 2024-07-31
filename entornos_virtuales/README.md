@@ -1,39 +1,50 @@
-*Crear entornos virtuales en Python* 
+# ENTORNO VIRTUAL EN PYTHON
 
-### Paso 1: Instalar virtualenv (si no está instalado)
-Si aún no tienes instalado virtualenv, puedes hacerlo utilizando pip, el gestor de paquetes de Python:
-bash
-pip install virtualenv
+¿QUE ES?
 
-### Paso 2: Crear un nuevo entorno virtual
-1. *Selecciona una ubicación*: Decide en qué directorio deseas crear tu entorno virtual. Puedes crearlo en cualquier lugar, pero es común hacerlo dentro del directorio de tu proyecto.
-2. *Crear el entorno virtual*: Abre una terminal (o línea de comandos) y navega hasta el directorio deseado. Luego, ejecuta el siguiente comando para crear un nuevo entorno virtual:
-   bash
-   virtualenv nombre_del_entorno
-   
-   Por ejemplo, para crear un entorno virtual llamado venv:
-   bash
-   virtualenv venv
-   
-   Esto creará un nuevo directorio llamado venv que contendrá todo lo necesario para tu entorno virtual.
-### Paso 3: Activar el entorno virtual
-Después de crear el entorno virtual, debes activarlo. La forma de hacerlo depende de tu sistema operativo:
-- *En Windows*:
-  bash
-  venv\Scripts\activate
-  
-- *En macOS y Linux*:
-  bash
-  source venv/bin/activate
-  
-   Nota: Al activar el entorno virtual, verás que el prompt de tu terminal cambiará para indicar que estás usando el entorno virtual ((nombre_del_entorno) generalmente aparecerá al principio de la línea de comandos).
+Son diversos modulos con los cuales python trabaja, en este caso PIP es como un Play Store, pero en python tenemos diversos paquetes.
 
-### Paso 4: Usar el entorno virtual
-Una vez que el entorno virtual está activado, cualquier instalación de paquetes Python (pip install ...) y la ejecución de scripts Python (python mi_script.py) se realizarán utilizando las versiones y configuraciones de Python del entorno virtual.
+¿COMO CREAR?
+Primero debo ubicarme en la carpeta en la cual creare mi entorno, en este caso me ubico en la carpeta entornos_virtuales. Haremos el proceso medisnte git bash.Primero debo ubicarme en la carpeta en la cual creare mi entorno, en este caso me ubico en la carpeta entornos_virtuales. Haremos el proceso medisnte git bash.
 
-### Paso 5: Desactivar el entorno virtual
-Cuando hayas terminado de trabajar en tu proyecto y desees salir del entorno virtual, simplemente ejecuta el siguiente comando en la terminal:
-bash
+1. cd entornos_virtuales/
 
-### deactivate
-Esto restaurará tu entorno de Python a la configuración del sistema.
+2. ls
+
+3. python -m venv .venv (el "." despues del nombre de la sub carpeta es OBLIGATORIO por el acuerdo de convencion, con el "." es que se crea la estructura de carpetas)
+
+4. source .venv/scripts/activate (con este comando se activa y en la parte de abajo del comando aparece "(.venv)" o el punto y el nombre que le asignamos)
+
+5. deactivate (con este comando se desactiva pero para instalar los demnas pasos debemos tener el entorno activado)
+
+6. source .venv/scripts/activate
+
+7.  pip list (aparece mas informacion de la cual debemos copiar la letrita verde:[notice] To update, run: python.exe -m pip install --upgrade pip)
+
+8. python.exe -m pip install --upgrade pip
+
+9. pip list si desactivo podre ver la version que tengo, pero veremos que no esta actualizada asi que haremos lo siguiente:
+
+10. deactivate
+
+11. pip --version aqui mistrarar versiobn anterior
+
+12. sourse .venv/scripts/activate
+
+13. pip --version aqui ya se actualizara la version de la anterior a la actual
+
+14. pip install flet
+
+15. pip list haciendo este conmando sabre si se instalo FLET
+
+# Si queremos eliminar el entorno virtual creado seguidamente ejecutamos estos comandos:
+
+1. cd ..
+
+2. rm -rf entornos_virtuales/
+
+# Si aun no tenemos la carpeta creada hacemos lo siguiente:
+
+1. mkdir entornos_virtuales/ para crear la carpeta
+
+2. cd entornos_virtuales para entrar a la carpeta
