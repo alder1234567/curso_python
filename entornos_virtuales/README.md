@@ -1,4 +1,4 @@
-Crear entornos virtuales en Python es una práctica común para mantener proyectos separados y gestionar las dependencias de forma limpia. Aquí te dejo un paso a paso para crear y gestionar entornos virtuales en Python:
+*Crear entornos virtuales en Python* , es una práctica común para mantener proyectos separados y gestionar las dependencias de forma limpia. Aquí te dejo un paso a paso para crear y gestionar entornos virtuales en Python:
 ### Paso 1: Instalar virtualenv (si no está instalado)
 Si aún no tienes instalado virtualenv, puedes hacerlo utilizando pip, el gestor de paquetes de Python:
 bash
