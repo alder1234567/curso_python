@@ -54,3 +54,5 @@ viaje.ingresar_destino("Barcelona")
 viaje.viaje = True  
 
 print(viaje.estado_viaje())
+
+
